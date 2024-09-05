@@ -16,12 +16,12 @@ use function Dagger\dag;
 class TestingEnums
 {
      #[DaggerFunction('Returns a container that echoes whatever string argument is provided')]
-     public function containerEcho(string $stringArg): Container
+     public function containerEcho(PhpEnum $phpEnum): Container
      {
          return dag()
              ->container()
              ->from('alpine:latest')
-             ->withExec(['echo', $stringArg]);
+             ->withExec(['echo', $phpEnum->value]);
      }
 
     #[DaggerFunction('Returns lines that match a pattern in the files of the provided Directory')]
