@@ -1,0 +1,6 @@
+{
+  "name": "testing-enums",
+  "sdk": "php",
+  "source": ".",
+  "engineVersion": "v0.12.5"
+}
