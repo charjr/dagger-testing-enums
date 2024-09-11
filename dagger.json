@@ -1,6 +1,6 @@
 {
   "name": "testing-enums",
-  "sdk": "php",
+  "sdk": "github.com/charjr/dagger/sdk/php@php-sdk-fix-enums",
   "source": ".",
-  "engineVersion": "v0.12.5"
+  "engineVersion": "v0.13.0"
 }
